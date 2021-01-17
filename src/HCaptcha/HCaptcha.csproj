@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Product>HCaptcha ($(TargetFramework))</Product>
+    <TargetFrameworks>netstandard2.0;</TargetFrameworks>
+    <AssemblyName>AJSWebDesign.HCaptcha</AssemblyName>
+    <RootNamespace>AJSWebDesign.HCaptcha</RootNamespace>
+    <GenerateDocumentationFile Condition=" '$(Configuration)' == 'Release' ">true</GenerateDocumentationFile>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>HCaptcha</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>AJS Web Design</Authors>
+    <Company>AJS Web Design</Company>
+    <PackageTags>hCaptcha; Bot Check</PackageTags>
+    <Description>
+      This inofficial client library enables working with hCaptcha.com.
+    </Description>
+    <owners>AJS Web Design</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/BenjaminAbt/hcaptcha</projectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="3.1.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+</Project>
